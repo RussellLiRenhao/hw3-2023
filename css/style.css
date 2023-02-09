@@ -1,0 +1,127 @@
+body {
+    /* Set line spacing */
+    line-height: 1.5;
+}
+
+
+  header, nav {
+    /* Set padding and margin */
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+nav ul li {
+    /* Set margin, padding, font-size */
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 1.2em;
+
+    /* Set display property to inline-block*/
+    display: inline-block;
+    /* Add space between list items */
+    justify-content: space-between;
+    /* Set padding and background color */
+    padding: 10px;
+    background-color: #dddddd;
+}
+
+nav a {
+    /* Remove text decoration */
+    text-decoration: none;
+}
+
+a:visited {
+    /* Set color */
+    color: black;
+}
+
+nav a.current {
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration: underline wavy;
+    text-transform: uppercase;
+    text-decoration-skip-ink: none;
+    position: relative;
+    bottom: -3px;
+}
+
+
+h1 {
+    /* Set font and font size */
+    font-size: 40px;
+    font-family: 'Merriweather', Anton, 'Times New Roman', sans-serif;
+}
+
+h2 {
+    /* Set font, font size, and alignment */
+    font-size: 30px;
+    font-family: 'Anton', 'Times New Roman', sans-serif;
+    text-align: center;
+}
+
+h3 {
+    /*Set font size*/
+    font-size: 25px;
+}
+
+h1, h2, h3 {
+    /*Set margin */
+    margin-top: 20px;
+  }
+
+.grid {
+    /*Set width, margin, border properties, background color, and grid properties */
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.grid img{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    box-shadow: 10px 0px 10px -5px rgba(0,0,0,0.2);
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */
+    box-shadow: -10px 0px 10px -5px rgba(0,0,0,0.2);
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+     box-shadow: -10px 0px 10px -5px rgba(0,0,0,0.2), 10px 0px 10px -5px rgba(0,0,0,0.2);
+}
+
+
+p + p {
+     /* Set indentation */
+     text-indent: 1em;
+  }
+
+p{
+     /* Set margin */
+     margin: 1em 0;
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    margin: 0 0 1em 2em;
+    line-height: 1;
+    list-style-image: url(sketchbook.png);
+}
